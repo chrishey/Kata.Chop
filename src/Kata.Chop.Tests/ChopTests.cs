@@ -21,6 +21,7 @@ namespace Kata.Chop.Tests
         public TestData()
         {
             Add(1, new List<int>{1,2,3,4}.ToArray(), 0);
+            Add(0, new[] {1, 2, 3, 4}, -1);
         }
     }
 }

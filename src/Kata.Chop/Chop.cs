@@ -1,10 +1,14 @@
-﻿namespace Kata.Chop
+﻿using System.Linq;
+
+namespace Kata.Chop
 {
     public class Chop
     {
         public int Find(int intToFind, int[] array)
         {
-            return 0;
+            var position = array.ToList().FindIndex(x=> x == intToFind);
+
+            return position;
         }
     }
 }
