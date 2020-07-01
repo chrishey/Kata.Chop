@@ -2,7 +2,7 @@
 
 namespace Kata.Chop
 {
-    public class Chop
+    public class LinqChop : IChop
     {
         public int Find(int intToFind, int[] array)
         {

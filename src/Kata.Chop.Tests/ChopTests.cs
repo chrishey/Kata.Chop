@@ -8,9 +8,9 @@ namespace Kata.Chop.Tests
     {
         [Theory]
         [ClassData(typeof(TestData))]
-        public void FindIntInArray(int intToFind, int[] arrayOfInts, int expectedPosition)
+        public void LinqChop_FindIntInArray(int intToFind, int[] arrayOfInts, int expectedPosition)
         {
-            var position = new Chop().Find(intToFind, arrayOfInts);
+            var position = new LinqChop().Find(intToFind, arrayOfInts);
 
             position.ShouldEqual(expectedPosition);
         }
